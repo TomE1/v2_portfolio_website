@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/371ac98270.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+
+    <!------------------- header -------------------------->
+
+    <section id="header">
+      <div class="container">
+        <nav class='main-header'>
+          <img src="images/tome.png" class="logo" />
+          <ul  id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>I'm <span>Tom.</span></h1>
+        </div>
+      </div>
+    </section>
+
+
+        <!------------------- about -------------------------->
+
+
+    <section id="about">
+    
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>     
+          <p>
+            I'm an American ESL teacher currently living in Vietnam and seeking
+            a teaching position in Ho Chi Minh. Visa sponsorship is required.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            
+          </div>
+          <div class="tab-contents active-tab" id="experience">
+            <ul>
+              <li><span></span> <li>
+                  <span></span>
+                  2020 - 2023: English Teacher at Language Link Vietnam: Long
+                  Bien, Hai Duong, Hung Yen.
+                  <br /><br />
+                  2019 - 2020: English Teacher at EMG Education, Ho Chi Minh,
+                  Vietnam (teaching 6th and 7th graders).
+                  <br /><br />
+                  2009 - 2016: English Teacher at Mahidol University ICT
+                  Faculty, Salaya, Thailand.
+                  <br /><br />
+                  2007 - 2009: English Teacher at Potisarn Pittayakorn School
+                  English Program, Bangkok, Thailand. 
+                  <br><br>
+                  2005 - 2007: English
+                  Teacher at Benjamarachutit School English Program, Nakhorn Sri
+                  Thammarat, Thailand. 
+                  <br /><br /> 
+                  2002
+                 
+                  2005: English Teacher at Sarassas Witaed Bangbon Bilingual
+                  School, Bangkok, Thailand.
+                </li>
+              </ul></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span></span>  <li>
+                  <span></span>
+                  2001 TEXT AND TALK LANGUAGE ACADEMY TEFL certificate.
+                  <br /><br />
+
+                  1994 UNIVERSITY OF HAWAII Bachelor of Arts - Japanese Language
+                  and Literature. 
+                </li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>Skills</span><br />Designing Web/App Interfaces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!------------------- Contact -------------------------->
+
+    <section id="contact">
+      <div class="container">
+
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i></i>tommevans210@gmail.com</p>
+            <p><i></i>+66 086 901 4374</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Created by Tom Evans</p>
+        </div>
+      </div>
+      </div>
+          
+    </section>
+<script src='script.js'></script>
+
+  </body>
+</html>
